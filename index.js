@@ -1062,7 +1062,7 @@ function getConfig(userIDs, hostName, proxyIP) {
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
-    <title>EDtunnel: Configuration</title>
+    <title>Vless CF</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta property='og:site_name' content='EDtunnel: Protocol Configuration' />
     <meta property='og:type' content='website' />
@@ -1198,26 +1198,11 @@ function getConfig(userIDs, hostName, proxyIP) {
 
 	const header = `
     <div class="container">
-      <h1>EDtunnel: Protocol Configuration</h1>
-      <img src="https://cdn.jsdelivr.net/gh/6Kmfi6HP/EDtunnel@refs/heads/main/image/logo.png" alt="EDtunnel Logo" class="logo">
-      <p>Welcome! This function generates configuration for the vless protocol. If you found this useful, please check our GitHub project:</p>
-      <p><a href="https://github.com/6Kmfi6HP/EDtunnel" target="_blank" style="color: #00ff00;">EDtunnel - https://github.com/6Kmfi6HP/EDtunnel</a></p>
+      <h1>Vless CF</h1>
       <div style="clear: both;"></div>
       <div class="btn-group">
-        <a href="//${hostName}/sub/${userIDArray[0]}" class="btn" target="_blank"><i class="fas fa-link"></i> VLESS Subscription</a>
-        <a href="clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}" class="btn" target="_blank"><i class="fas fa-bolt"></i> Clash Subscription</a>
-        <a href="${clash_link}" class="btn" target="_blank"><i class="fas fa-bolt"></i> Clash Link</a>
-        <a href="${subbestip}" class="btn" target="_blank"><i class="fas fa-star"></i> Best IP Subscription</a>
       </div>
       <div class="subscription-info">
-        <h3>Options Explained:</h3>
-        <ul>
-          <li><strong>VLESS Subscription:</strong> Direct link for VLESS protocol configuration. Suitable for clients supporting VLESS.</li>
-          <li><strong>Clash Subscription:</strong> Opens the Clash client with pre-configured settings. Best for Clash users on mobile devices.</li>
-          <li><strong>Clash Link:</strong> A web link to convert the VLESS config to Clash format. Useful for manual import or troubleshooting.</li>
-          <li><strong>Best IP Subscription:</strong> Provides a curated list of optimal server IPs for many <b>different countries</b>.</li>
-        </ul>
-        <p>Choose the option that best fits your client and needs. For most users, the VLESS or Clash Subscription will be the easiest to use.</p>
       </div>
     </div>
   `;
